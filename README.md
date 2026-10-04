@@ -1,78 +1,163 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built to showcase my projects, technical skills, learning journey, and experience as I grow as a developer.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** Not yet deploy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* Responsive portfolio website
+* Animated landing page
+* Introduction / about section
+* Project showcase
+* Interactive project technology section
+* Contact section
+* Smooth scrolling and scroll-based animations
+* Responsive design for different screen sizes
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **React** — UI development
+* **TypeScript** — Type-safe JavaScript
+* **Vite** — Development environment and build tool
+* **Tailwind CSS** — Styling
+* **GSAP** — Animations and scroll interactions
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Tools
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **Git & GitHub** — Version control
+* **ESLint** — Code quality
+* **npm** — Package management
 
+---
+
+## 📂 Project Structure
+
+```text
+portfolio/
+├── public/
+│   └── ...
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the repository
 
+```bash
+git clone git@github.com:pleasetypeyourusername/Portfolio.git
+cd portfolio
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+The development server will start locally. Open the URL provided in the terminal to view the website.
+
+---
+
+## 🏗️ Build for Production
+
+Create a production build with:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📌 Projects
+
+Some of the projects showcased in this portfolio include:
+
+### Biomation
+
+An agriculture IoT platform concept focused on collecting and visualizing farm data through connected sensors.
+
+**Technologies:**
+
+* React
+* TypeScript
+* Tailwind CSS
+* GSAP
+* IoT concepts
+* Data engineering concepts
+
+### Personal Portfolio
+
+This portfolio itself is also a project, built to experiment with modern frontend technologies, animations, responsive design, and interactive UI.
+
+---
+
+## 📚 What I Learned
+
+This project helped me improve my understanding of:
+
+* React component architecture
+* TypeScript
+* Tailwind CSS
+* GSAP animations
+* Responsive web design
+* Scroll-based interactions
+* Project organization
+* Git and GitHub workflows
+* Building and deploying a frontend application
+
+---
+
+## 📬 Contact
+
+If you'd like to get in touch, you can reach me through the contact information provided (prefer Instagram).
+
+**GitHub:** https://github.com/pleasetypeyourusername
+
+**Linked:** https://www.linkedin.com/in/buck-duck-46254b213
+
+**Instagram:** https://www.instagram.com/pleasetypeyourusername
+
+**Gmail:** https://mail.google.com/mail/?view=cm&to=ongminquan0827@gmail.com
+
+---
+
+## 📄 License
+
+This project is for personal and portfolio purposes.
