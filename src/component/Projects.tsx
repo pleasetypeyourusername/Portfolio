@@ -122,7 +122,7 @@ export default function portfolioHovers(): JSX.Element {
 
                 <DivContainer option = 'w-[60%] h-full justify-start gap-0 select-text'>
                     <DivContainer option = {`p-5 hover:bg-[#527edd]/10 #527edd rounded-md ${ portfolioHover === 'Biomation' ? 'bg-gray-800/30' : 'opacity-50' }`}  onMouseEnter={() => setPortfolioHover('Biomation')}>
-                        <a className = "w-full gap-10 flex flex-row" href = "https://github.com/pleasetypeyourusername" target = '_blank'>
+                        <a className = "w-full gap-10 flex flex-row" href = "https://github.com/pleasetypeyourusername/Biomation" target = '_blank'>
                             <DivContainer option = 'justify-between w-[20%] items-center gap-5'>
                                 <DivContainer option = 'h-max w-max'>
                                     <Texts option= "font-mono text-[#ffffee]">June 2025 — Still Doing</Texts>
@@ -157,36 +157,38 @@ export default function portfolioHovers(): JSX.Element {
                     </DivContainer>
 
                     <DivContainer rows option = {`w-full gap-10 p-5 hover:bg-[#527edd]/10 rounded-md ${ portfolioHover === 'Portfolio' ? 'bg-gray-800/30' : 'opacity-50' }`} onMouseEnter={() => setPortfolioHover('Portfolio')}>
-                        <DivContainer option = 'justify-between items-center w-[20%] gap-5'>
-                            <DivContainer option = 'h-max w-max'>
-                                <Texts option= "font-mono text-[#ffffee]" s = {5} c = {1}>September 2026 — October 2026</Texts>
-                            </DivContainer>
-
-                            <DivContainer option = 'flex-1 w-full justify-center items-center select-none'>
-                                <DivContainer option = 'border border-gray-600 bg-black p-1'>
-                                    <img className = 'h-20 w-40 rounded-sm' src = '/assets/portfolioThumbnail.png' alt = 'portfolio thumbnail'/>                                
-                                </DivContainer>
-                            </DivContainer>
-                        </DivContainer>
-                    
-
-                        <DivContainer option = 'gap-2 w-[80%] justify-between'>
-                            <DivContainer>
-                                <DivContainer rows option = 'gap-3 items-center select-none'>
-                                    <Texts c = {0} w = {2} s = {1} option = 'font-mono'>Portfolio</Texts>
+                        <a className = "w-full gap-10 flex flex-row" href = "https://github.com/pleasetypeyourusername/Portfolio" target = '_blank'>
+                            <DivContainer option = 'justify-between items-center w-[20%] gap-5'>
+                                <DivContainer option = 'h-max w-max'>
+                                    <Texts option= "font-mono text-[#ffffee]" s = {5} c = {1}>September 2026 — October 2026</Texts>
                                 </DivContainer>
 
+                                <DivContainer option = 'flex-1 w-full justify-center items-center select-none'>
+                                    <DivContainer option = 'border border-gray-600 bg-black p-1'>
+                                        <img className = 'h-20 w-40 rounded-sm' src = '/assets/portfolioThumbnail.png' alt = 'portfolio thumbnail'/>                                
+                                    </DivContainer>
+                                </DivContainer>
+                            </DivContainer>
+                        
+
+                            <DivContainer option = 'gap-2 w-[80%] justify-between'>
                                 <DivContainer>
-                                    <Texts c = {1} option = 'font-serif'>
-                                        The current portfolio you're looking at right now.
-                                    </Texts>
+                                    <DivContainer rows option = 'gap-3 items-center select-none'>
+                                        <Texts c = {0} w = {2} s = {1} option = 'font-mono'>Portfolio</Texts>
+                                    </DivContainer>
+
+                                    <DivContainer>
+                                        <Texts c = {1} option = 'font-serif'>
+                                            The current portfolio you're looking at right now.
+                                        </Texts>
+                                    </DivContainer>
+                                </DivContainer>
+
+                                <DivContainer option = 'gap-1'>
+                                    <TechListing list = {['React Vite', 'GSAP', 'Tailwind', "Typescript"]}/>
                                 </DivContainer>
                             </DivContainer>
-
-                            <DivContainer option = 'gap-1'>
-                                <TechListing list = {['React Vite', 'GSAP', 'Tailwind', "Typescript"]}/>
-                            </DivContainer>
-                        </DivContainer>
+                        </a>
                     </DivContainer>
 
                     <DivContainer option = {`p-5 hover:bg-[#527edd]/10 rounded-md ${ portfolioHover === 'A Joke 1' ? 'bg-gray-800/30' : 'opacity-50' }`} onMouseEnter={() => setPortfolioHover('A Joke 1')}>
