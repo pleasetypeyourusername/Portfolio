@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import "tailwindcss";
+
+
+@utility no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@utility circle-animation {
+    background-image: radial-gradient(
+        circle,
+        rgba(139, 226, 139, 0.25) 1px,
+        transparent 1px
+    );
+    animation: rotate-circle 30s linear infinite;
+}
+
+
+@theme {
+    --font-montez: "Montez", cursive; 
+    --font-gamjaFlower: "Gamja Flower", sans-serif;
+}
+
+
+
+
+
+
+
+
+html,
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
