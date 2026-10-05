@@ -116,11 +116,16 @@ An agriculture IoT platform concept focused on collecting and visualizing farm d
 **Technologies:**
 
 * React
-* TypeScript
 * Tailwind CSS
 * GSAP
-* IoT concepts
-* Data engineering concepts
+* Kafka
+* Vite
+* Node.js 
+* Javascript
+* Docker 
+* Kubernete 
+* Linux
+
 
 ### Personal Portfolio
 
